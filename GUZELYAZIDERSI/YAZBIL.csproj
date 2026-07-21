@@ -92,5 +92,50 @@
   <ItemGroup>
     <None Include="Resources\Asset 3%400.1x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btngeri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 2%400.5x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btneskiileri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btneskizoomeksi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btneskizoomarti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnsaatyonutersi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnsaatyonutersi %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnsaatyonu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnsaatyonutersi %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnsaatyonutersi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnsaatyonutersi2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnsaatyonu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btntamekran.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btntamektan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnnotal.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
