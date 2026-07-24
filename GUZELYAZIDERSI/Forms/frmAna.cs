@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GUZELYAZIDERSI.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GUZELYAZIDERSI.Classes;
 
 namespace GUZELYAZIDERSI
 {
@@ -51,6 +53,12 @@ namespace GUZELYAZIDERSI
             ButtonSinifi.ToolStripButtonAyarla(tsbtnileri);
             ButtonSinifi.ToolStripButtonAyarla(tsbtnrapor);
             ButtonSinifi.ToolStripButtonAyarla(tsbtnayarlar);
+
+            DataGridViewAyar.DegerlendirmeGridHazirla(dgvIcerik);
+            DataGridViewAyar.DegerlendirmeKolonlariniOlustur(dgvIcerik);
+
+            DataGridViewAyar.DegerlendirmeGridHazirla(dgvSekil);
+            DataGridViewAyar.DegerlendirmeKolonlariniOlustur(dgvSekil);
 
         }
     }

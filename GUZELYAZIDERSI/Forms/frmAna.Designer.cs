@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmYaziDegerlendir));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splana = new System.Windows.Forms.SplitContainer();
             this.splanaust = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -108,34 +110,38 @@
             this.label13 = new System.Windows.Forms.Label();
             this.tblolcutbilgileri = new System.Windows.Forms.TableLayoutPanel();
             this.label12 = new System.Windows.Forms.Label();
+            this.tabdegerlendirme = new System.Windows.Forms.TabControl();
+            this.tabPageİcerik = new System.Windows.Forms.TabPage();
+            this.dgvIcerik = new System.Windows.Forms.DataGridView();
+            this.tabPageSekil = new System.Windows.Forms.TabPage();
+            this.dgvSekil = new System.Windows.Forms.DataGridView();
+            this.tabPageogrenimciktilari = new System.Windows.Forms.TabPage();
+            this.tabPageNotlar = new System.Windows.Forms.TabPage();
+            this.tabPageSonuc = new System.Windows.Forms.TabPage();
             this.tblogrencibilgileri = new System.Windows.Forms.TableLayoutPanel();
             this.label11 = new System.Windows.Forms.Label();
+            this.tbllytogrencibilgileri = new System.Windows.Forms.TableLayoutPanel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.rchodev = new System.Windows.Forms.RichTextBox();
+            this.cmbyazituru = new System.Windows.Forms.ComboBox();
+            this.cmbsinif = new System.Windows.Forms.ComboBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cmbadisoyadi = new System.Windows.Forms.ComboBox();
+            this.mskogrnumara = new System.Windows.Forms.MaskedTextBox();
+            this.dttarih = new System.Windows.Forms.DateTimePicker();
+            this.rchaciklama = new System.Windows.Forms.RichTextBox();
+            this.btnogrencigetir = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblsondegerlendirme = new System.Windows.Forms.Label();
             this.lbltoplamyazi = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.cmbadisoyadi = new System.Windows.Forms.ComboBox();
-            this.cmbsinif = new System.Windows.Forms.ComboBox();
-            this.mskogrnumara = new System.Windows.Forms.MaskedTextBox();
-            this.cmbyazituru = new System.Windows.Forms.ComboBox();
-            this.dttarih = new System.Windows.Forms.DateTimePicker();
-            this.rchaciklama = new System.Windows.Forms.RichTextBox();
-            this.rchodev = new System.Windows.Forms.RichTextBox();
-            this.tabdegerlendirme = new System.Windows.Forms.TabControl();
-            this.tabPageİcerik = new System.Windows.Forms.TabPage();
-            this.tabPageSekil = new System.Windows.Forms.TabPage();
-            this.tabPageogrenimciktilari = new System.Windows.Forms.TabPage();
-            this.tabPageNotlar = new System.Windows.Forms.TabPage();
-            this.tabPageSonuc = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.splana)).BeginInit();
             this.splana.Panel1.SuspendLayout();
             this.splana.Panel2.SuspendLayout();
@@ -166,11 +172,15 @@
             this.tbllytsoldegerlendirme.SuspendLayout();
             this.tblhizlisonuc.SuspendLayout();
             this.tblolcutbilgileri.SuspendLayout();
+            this.tabdegerlendirme.SuspendLayout();
+            this.tabPageİcerik.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvIcerik)).BeginInit();
+            this.tabPageSekil.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSekil)).BeginInit();
             this.tblogrencibilgileri.SuspendLayout();
+            this.tbllytogrencibilgileri.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.tabdegerlendirme.SuspendLayout();
             this.SuspendLayout();
             // 
             // splana
@@ -1185,13 +1195,122 @@
             this.label12.Text = "DEĞERLENDİRME";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // tabdegerlendirme
+            // 
+            this.tabdegerlendirme.Controls.Add(this.tabPageİcerik);
+            this.tabdegerlendirme.Controls.Add(this.tabPageSekil);
+            this.tabdegerlendirme.Controls.Add(this.tabPageogrenimciktilari);
+            this.tabdegerlendirme.Controls.Add(this.tabPageNotlar);
+            this.tabdegerlendirme.Controls.Add(this.tabPageSonuc);
+            this.tabdegerlendirme.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabdegerlendirme.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tabdegerlendirme.Location = new System.Drawing.Point(3, 30);
+            this.tabdegerlendirme.Name = "tabdegerlendirme";
+            this.tabdegerlendirme.SelectedIndex = 0;
+            this.tabdegerlendirme.Size = new System.Drawing.Size(240, 297);
+            this.tabdegerlendirme.TabIndex = 2;
+            // 
+            // tabPageİcerik
+            // 
+            this.tabPageİcerik.Controls.Add(this.dgvIcerik);
+            this.tabPageİcerik.Location = new System.Drawing.Point(4, 26);
+            this.tabPageİcerik.Name = "tabPageİcerik";
+            this.tabPageİcerik.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageİcerik.Size = new System.Drawing.Size(232, 267);
+            this.tabPageİcerik.TabIndex = 0;
+            this.tabPageİcerik.Text = "İçerik";
+            this.tabPageİcerik.UseVisualStyleBackColor = true;
+            // 
+            // dgvIcerik
+            // 
+            this.dgvIcerik.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvIcerik.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvIcerik.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvIcerik.EnableHeadersVisualStyles = false;
+            this.dgvIcerik.Location = new System.Drawing.Point(3, 3);
+            this.dgvIcerik.Name = "dgvIcerik";
+            this.dgvIcerik.RowHeadersWidth = 51;
+            this.dgvIcerik.RowTemplate.Height = 24;
+            this.dgvIcerik.Size = new System.Drawing.Size(226, 261);
+            this.dgvIcerik.TabIndex = 0;
+            // 
+            // tabPageSekil
+            // 
+            this.tabPageSekil.Controls.Add(this.dgvSekil);
+            this.tabPageSekil.Location = new System.Drawing.Point(4, 26);
+            this.tabPageSekil.Name = "tabPageSekil";
+            this.tabPageSekil.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSekil.Size = new System.Drawing.Size(232, 267);
+            this.tabPageSekil.TabIndex = 1;
+            this.tabPageSekil.Text = "Şekil";
+            this.tabPageSekil.UseVisualStyleBackColor = true;
+            // 
+            // dgvSekil
+            // 
+            this.dgvSekil.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSekil.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvSekil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSekil.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvSekil.EnableHeadersVisualStyles = false;
+            this.dgvSekil.Location = new System.Drawing.Point(3, 3);
+            this.dgvSekil.Name = "dgvSekil";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSekil.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvSekil.RowHeadersWidth = 51;
+            this.dgvSekil.RowTemplate.Height = 24;
+            this.dgvSekil.Size = new System.Drawing.Size(226, 261);
+            this.dgvSekil.TabIndex = 1;
+            // 
+            // tabPageogrenimciktilari
+            // 
+            this.tabPageogrenimciktilari.Location = new System.Drawing.Point(4, 26);
+            this.tabPageogrenimciktilari.Name = "tabPageogrenimciktilari";
+            this.tabPageogrenimciktilari.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageogrenimciktilari.Size = new System.Drawing.Size(232, 267);
+            this.tabPageogrenimciktilari.TabIndex = 2;
+            this.tabPageogrenimciktilari.Text = "Öğrenim Çıktıları";
+            this.tabPageogrenimciktilari.UseVisualStyleBackColor = true;
+            // 
+            // tabPageNotlar
+            // 
+            this.tabPageNotlar.Location = new System.Drawing.Point(4, 26);
+            this.tabPageNotlar.Name = "tabPageNotlar";
+            this.tabPageNotlar.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageNotlar.Size = new System.Drawing.Size(232, 267);
+            this.tabPageNotlar.TabIndex = 3;
+            this.tabPageNotlar.Text = "Notlar";
+            this.tabPageNotlar.UseVisualStyleBackColor = true;
+            // 
+            // tabPageSonuc
+            // 
+            this.tabPageSonuc.Location = new System.Drawing.Point(4, 26);
+            this.tabPageSonuc.Name = "tabPageSonuc";
+            this.tabPageSonuc.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSonuc.Size = new System.Drawing.Size(232, 267);
+            this.tabPageSonuc.TabIndex = 4;
+            this.tabPageSonuc.Text = "Sonuç";
+            this.tabPageSonuc.UseVisualStyleBackColor = true;
+            // 
             // tblogrencibilgileri
             // 
             this.tblogrencibilgileri.ColumnCount = 1;
             this.tblogrencibilgileri.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblogrencibilgileri.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tblogrencibilgileri.Controls.Add(this.label11, 0, 0);
-            this.tblogrencibilgileri.Controls.Add(this.tableLayoutPanel3, 0, 1);
+            this.tblogrencibilgileri.Controls.Add(this.tbllytogrencibilgileri, 0, 1);
             this.tblogrencibilgileri.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblogrencibilgileri.Location = new System.Drawing.Point(3, 3);
             this.tblogrencibilgileri.Name = "tblogrencibilgileri";
@@ -1214,6 +1333,213 @@
             this.label11.TabIndex = 1;
             this.label11.Text = "ÖĞRENCİ BİLGİLERİ";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tbllytogrencibilgileri
+            // 
+            this.tbllytogrencibilgileri.ColumnCount = 2;
+            this.tbllytogrencibilgileri.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.33333F));
+            this.tbllytogrencibilgileri.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.66667F));
+            this.tbllytogrencibilgileri.Controls.Add(this.label15, 0, 7);
+            this.tbllytogrencibilgileri.Controls.Add(this.rchodev, 1, 6);
+            this.tbllytogrencibilgileri.Controls.Add(this.cmbyazituru, 1, 3);
+            this.tbllytogrencibilgileri.Controls.Add(this.cmbsinif, 1, 1);
+            this.tbllytogrencibilgileri.Controls.Add(this.label26, 0, 6);
+            this.tbllytogrencibilgileri.Controls.Add(this.label24, 0, 5);
+            this.tbllytogrencibilgileri.Controls.Add(this.label22, 0, 4);
+            this.tbllytogrencibilgileri.Controls.Add(this.label20, 0, 3);
+            this.tbllytogrencibilgileri.Controls.Add(this.label18, 0, 2);
+            this.tbllytogrencibilgileri.Controls.Add(this.label16, 0, 1);
+            this.tbllytogrencibilgileri.Controls.Add(this.label14, 0, 0);
+            this.tbllytogrencibilgileri.Controls.Add(this.cmbadisoyadi, 1, 0);
+            this.tbllytogrencibilgileri.Controls.Add(this.mskogrnumara, 1, 2);
+            this.tbllytogrencibilgileri.Controls.Add(this.dttarih, 1, 4);
+            this.tbllytogrencibilgileri.Controls.Add(this.rchaciklama, 1, 5);
+            this.tbllytogrencibilgileri.Controls.Add(this.btnogrencigetir, 1, 7);
+            this.tbllytogrencibilgileri.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbllytogrencibilgileri.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tbllytogrencibilgileri.Location = new System.Drawing.Point(3, 29);
+            this.tbllytogrencibilgileri.Name = "tbllytogrencibilgileri";
+            this.tbllytogrencibilgileri.RowCount = 8;
+            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22F));
+            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tbllytogrencibilgileri.Size = new System.Drawing.Size(240, 298);
+            this.tbllytogrencibilgileri.TabIndex = 2;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label15.Location = new System.Drawing.Point(3, 270);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(97, 28);
+            this.label15.TabIndex = 20;
+            this.label15.Text = "Öğrenci Getir";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // rchodev
+            // 
+            this.rchodev.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rchodev.Location = new System.Drawing.Point(106, 213);
+            this.rchodev.Name = "rchodev";
+            this.rchodev.Size = new System.Drawing.Size(131, 54);
+            this.rchodev.TabIndex = 19;
+            this.rchodev.Text = "";
+            // 
+            // cmbyazituru
+            // 
+            this.cmbyazituru.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbyazituru.FormattingEnabled = true;
+            this.cmbyazituru.Location = new System.Drawing.Point(106, 108);
+            this.cmbyazituru.Name = "cmbyazituru";
+            this.cmbyazituru.Size = new System.Drawing.Size(131, 25);
+            this.cmbyazituru.TabIndex = 16;
+            // 
+            // cmbsinif
+            // 
+            this.cmbsinif.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbsinif.FormattingEnabled = true;
+            this.cmbsinif.Location = new System.Drawing.Point(106, 38);
+            this.cmbsinif.Name = "cmbsinif";
+            this.cmbsinif.Size = new System.Drawing.Size(131, 25);
+            this.cmbsinif.TabIndex = 14;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label26.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label26.Location = new System.Drawing.Point(3, 210);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(97, 60);
+            this.label26.TabIndex = 12;
+            this.label26.Text = "Ödev:";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label24.Location = new System.Drawing.Point(3, 175);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(97, 35);
+            this.label24.TabIndex = 10;
+            this.label24.Text = "Açıklama:";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label22.Location = new System.Drawing.Point(3, 140);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(97, 35);
+            this.label22.TabIndex = 8;
+            this.label22.Text = "Tarih:";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label20.Location = new System.Drawing.Point(3, 105);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(97, 35);
+            this.label20.TabIndex = 6;
+            this.label20.Text = "Yazı Türü:";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label18.Location = new System.Drawing.Point(3, 70);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(97, 35);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "Öğrenci No:";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label16.Location = new System.Drawing.Point(3, 35);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(97, 35);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "Sınıf:";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.Location = new System.Drawing.Point(3, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(97, 35);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Adı Soyadı:";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // cmbadisoyadi
+            // 
+            this.cmbadisoyadi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbadisoyadi.FormattingEnabled = true;
+            this.cmbadisoyadi.Location = new System.Drawing.Point(106, 3);
+            this.cmbadisoyadi.Name = "cmbadisoyadi";
+            this.cmbadisoyadi.Size = new System.Drawing.Size(131, 25);
+            this.cmbadisoyadi.TabIndex = 13;
+            // 
+            // mskogrnumara
+            // 
+            this.mskogrnumara.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mskogrnumara.Location = new System.Drawing.Point(106, 73);
+            this.mskogrnumara.Mask = "00000";
+            this.mskogrnumara.Name = "mskogrnumara";
+            this.mskogrnumara.Size = new System.Drawing.Size(131, 25);
+            this.mskogrnumara.TabIndex = 15;
+            this.mskogrnumara.ValidatingType = typeof(int);
+            // 
+            // dttarih
+            // 
+            this.dttarih.CalendarFont = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dttarih.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dttarih.Location = new System.Drawing.Point(106, 143);
+            this.dttarih.Name = "dttarih";
+            this.dttarih.Size = new System.Drawing.Size(130, 25);
+            this.dttarih.TabIndex = 17;
+            // 
+            // rchaciklama
+            // 
+            this.rchaciklama.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rchaciklama.Location = new System.Drawing.Point(106, 178);
+            this.rchaciklama.Name = "rchaciklama";
+            this.rchaciklama.Size = new System.Drawing.Size(131, 29);
+            this.rchaciklama.TabIndex = 18;
+            this.rchaciklama.Text = "";
+            // 
+            // btnogrencigetir
+            // 
+            this.btnogrencigetir.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnogrencigetir.Location = new System.Drawing.Point(106, 273);
+            this.btnogrencigetir.Name = "btnogrencigetir";
+            this.btnogrencigetir.Size = new System.Drawing.Size(131, 22);
+            this.btnogrencigetir.TabIndex = 21;
+            this.btnogrencigetir.Text = "ÖĞRENCİ GETİR";
+            this.btnogrencigetir.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -1283,252 +1609,6 @@
             this.linkLabel1.Text = "PROGRAM HAKKINDA";
             this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.33333F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.66667F));
-            this.tableLayoutPanel3.Controls.Add(this.rchodev, 1, 6);
-            this.tableLayoutPanel3.Controls.Add(this.cmbyazituru, 1, 3);
-            this.tableLayoutPanel3.Controls.Add(this.cmbsinif, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.label26, 0, 6);
-            this.tableLayoutPanel3.Controls.Add(this.label24, 0, 5);
-            this.tableLayoutPanel3.Controls.Add(this.label22, 0, 4);
-            this.tableLayoutPanel3.Controls.Add(this.label20, 0, 3);
-            this.tableLayoutPanel3.Controls.Add(this.label18, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.label16, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.label14, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.cmbadisoyadi, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.mskogrnumara, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.dttarih, 1, 4);
-            this.tableLayoutPanel3.Controls.Add(this.rchaciklama, 1, 5);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 29);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 7;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(240, 298);
-            this.tableLayoutPanel3.TabIndex = 2;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(3, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(98, 38);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Adı Soyadı:";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label16.Location = new System.Drawing.Point(3, 38);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(98, 38);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "Sınıf:";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label18.Location = new System.Drawing.Point(3, 76);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(98, 38);
-            this.label18.TabIndex = 4;
-            this.label18.Text = "Öğrenci No:";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label20.Location = new System.Drawing.Point(3, 114);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(98, 38);
-            this.label20.TabIndex = 6;
-            this.label20.Text = "Yazı Türü:";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label22.Location = new System.Drawing.Point(3, 152);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(98, 38);
-            this.label22.TabIndex = 8;
-            this.label22.Text = "Tarih:";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label24.Location = new System.Drawing.Point(3, 190);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(98, 38);
-            this.label24.TabIndex = 10;
-            this.label24.Text = "Açıklama:";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label26.Location = new System.Drawing.Point(3, 228);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(98, 70);
-            this.label26.TabIndex = 12;
-            this.label26.Text = "Ödev:";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // cmbadisoyadi
-            // 
-            this.cmbadisoyadi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbadisoyadi.FormattingEnabled = true;
-            this.cmbadisoyadi.Location = new System.Drawing.Point(107, 3);
-            this.cmbadisoyadi.Name = "cmbadisoyadi";
-            this.cmbadisoyadi.Size = new System.Drawing.Size(130, 31);
-            this.cmbadisoyadi.TabIndex = 13;
-            // 
-            // cmbsinif
-            // 
-            this.cmbsinif.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbsinif.FormattingEnabled = true;
-            this.cmbsinif.Location = new System.Drawing.Point(107, 41);
-            this.cmbsinif.Name = "cmbsinif";
-            this.cmbsinif.Size = new System.Drawing.Size(130, 31);
-            this.cmbsinif.TabIndex = 14;
-            // 
-            // mskogrnumara
-            // 
-            this.mskogrnumara.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mskogrnumara.Location = new System.Drawing.Point(107, 79);
-            this.mskogrnumara.Mask = "00000";
-            this.mskogrnumara.Name = "mskogrnumara";
-            this.mskogrnumara.Size = new System.Drawing.Size(130, 30);
-            this.mskogrnumara.TabIndex = 15;
-            this.mskogrnumara.ValidatingType = typeof(int);
-            // 
-            // cmbyazituru
-            // 
-            this.cmbyazituru.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbyazituru.FormattingEnabled = true;
-            this.cmbyazituru.Location = new System.Drawing.Point(107, 117);
-            this.cmbyazituru.Name = "cmbyazituru";
-            this.cmbyazituru.Size = new System.Drawing.Size(130, 31);
-            this.cmbyazituru.TabIndex = 16;
-            // 
-            // dttarih
-            // 
-            this.dttarih.CalendarFont = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dttarih.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dttarih.Location = new System.Drawing.Point(107, 155);
-            this.dttarih.Name = "dttarih";
-            this.dttarih.Size = new System.Drawing.Size(130, 25);
-            this.dttarih.TabIndex = 17;
-            // 
-            // rchaciklama
-            // 
-            this.rchaciklama.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rchaciklama.Location = new System.Drawing.Point(107, 193);
-            this.rchaciklama.Name = "rchaciklama";
-            this.rchaciklama.Size = new System.Drawing.Size(130, 32);
-            this.rchaciklama.TabIndex = 18;
-            this.rchaciklama.Text = "";
-            // 
-            // rchodev
-            // 
-            this.rchodev.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rchodev.Location = new System.Drawing.Point(107, 231);
-            this.rchodev.Name = "rchodev";
-            this.rchodev.Size = new System.Drawing.Size(130, 64);
-            this.rchodev.TabIndex = 19;
-            this.rchodev.Text = "";
-            // 
-            // tabdegerlendirme
-            // 
-            this.tabdegerlendirme.Controls.Add(this.tabPageİcerik);
-            this.tabdegerlendirme.Controls.Add(this.tabPageSekil);
-            this.tabdegerlendirme.Controls.Add(this.tabPageogrenimciktilari);
-            this.tabdegerlendirme.Controls.Add(this.tabPageNotlar);
-            this.tabdegerlendirme.Controls.Add(this.tabPageSonuc);
-            this.tabdegerlendirme.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabdegerlendirme.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tabdegerlendirme.Location = new System.Drawing.Point(3, 30);
-            this.tabdegerlendirme.Name = "tabdegerlendirme";
-            this.tabdegerlendirme.SelectedIndex = 0;
-            this.tabdegerlendirme.Size = new System.Drawing.Size(240, 297);
-            this.tabdegerlendirme.TabIndex = 2;
-            // 
-            // tabPageİcerik
-            // 
-            this.tabPageİcerik.Location = new System.Drawing.Point(4, 26);
-            this.tabPageİcerik.Name = "tabPageİcerik";
-            this.tabPageİcerik.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageİcerik.Size = new System.Drawing.Size(232, 267);
-            this.tabPageİcerik.TabIndex = 0;
-            this.tabPageİcerik.Text = "İçerik";
-            this.tabPageİcerik.UseVisualStyleBackColor = true;
-            // 
-            // tabPageSekil
-            // 
-            this.tabPageSekil.Location = new System.Drawing.Point(4, 26);
-            this.tabPageSekil.Name = "tabPageSekil";
-            this.tabPageSekil.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSekil.Size = new System.Drawing.Size(232, 267);
-            this.tabPageSekil.TabIndex = 1;
-            this.tabPageSekil.Text = "Şekil";
-            this.tabPageSekil.UseVisualStyleBackColor = true;
-            // 
-            // tabPageogrenimciktilari
-            // 
-            this.tabPageogrenimciktilari.Location = new System.Drawing.Point(4, 26);
-            this.tabPageogrenimciktilari.Name = "tabPageogrenimciktilari";
-            this.tabPageogrenimciktilari.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageogrenimciktilari.Size = new System.Drawing.Size(232, 267);
-            this.tabPageogrenimciktilari.TabIndex = 2;
-            this.tabPageogrenimciktilari.Text = "Öğrenim Çıktıları";
-            this.tabPageogrenimciktilari.UseVisualStyleBackColor = true;
-            // 
-            // tabPageNotlar
-            // 
-            this.tabPageNotlar.Location = new System.Drawing.Point(4, 26);
-            this.tabPageNotlar.Name = "tabPageNotlar";
-            this.tabPageNotlar.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageNotlar.Size = new System.Drawing.Size(232, 267);
-            this.tabPageNotlar.TabIndex = 3;
-            this.tabPageNotlar.Text = "Notlar";
-            this.tabPageNotlar.UseVisualStyleBackColor = true;
-            // 
-            // tabPageSonuc
-            // 
-            this.tabPageSonuc.Location = new System.Drawing.Point(4, 26);
-            this.tabPageSonuc.Name = "tabPageSonuc";
-            this.tabPageSonuc.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSonuc.Size = new System.Drawing.Size(232, 267);
-            this.tabPageSonuc.TabIndex = 4;
-            this.tabPageSonuc.Text = "Sonuç";
-            this.tabPageSonuc.UseVisualStyleBackColor = true;
-            // 
             // frmYaziDegerlendir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
@@ -1584,14 +1664,18 @@
             this.tblhizlisonuc.PerformLayout();
             this.tblolcutbilgileri.ResumeLayout(false);
             this.tblolcutbilgileri.PerformLayout();
+            this.tabdegerlendirme.ResumeLayout(false);
+            this.tabPageİcerik.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvIcerik)).EndInit();
+            this.tabPageSekil.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSekil)).EndInit();
             this.tblogrencibilgileri.ResumeLayout(false);
             this.tblogrencibilgileri.PerformLayout();
+            this.tbllytogrencibilgileri.ResumeLayout(false);
+            this.tbllytogrencibilgileri.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
-            this.tabdegerlendirme.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1684,7 +1768,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TableLayoutPanel tblogrencibilgileri;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TableLayoutPanel tbllytogrencibilgileri;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label22;
@@ -1705,6 +1789,10 @@
         private System.Windows.Forms.TabPage tabPageogrenimciktilari;
         private System.Windows.Forms.TabPage tabPageNotlar;
         private System.Windows.Forms.TabPage tabPageSonuc;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button btnogrencigetir;
+        private System.Windows.Forms.DataGridView dgvIcerik;
+        private System.Windows.Forms.DataGridView dgvSekil;
     }
 }
 

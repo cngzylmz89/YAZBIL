@@ -9,3 +9,5 @@ C:\Users\CENGİZ\Desktop\YAZBIL\GUZELYAZIDERSI\obj\Debug\YAZBIL.csproj.GenerateR
 C:\Users\CENGİZ\Desktop\YAZBIL\GUZELYAZIDERSI\obj\Debug\YAZBIL.csproj.CoreCompileInputs.cache
 C:\Users\CENGİZ\Desktop\YAZBIL\GUZELYAZIDERSI\obj\Debug\GUZELYAZIDERSI.exe
 C:\Users\CENGİZ\Desktop\YAZBIL\GUZELYAZIDERSI\obj\Debug\GUZELYAZIDERSI.pdb
+C:\Users\CENGİZ\Desktop\YAZBIL\GUZELYAZIDERSI\bin\Debug\Data - Copy\YAZBIL.accdb
+C:\Users\CENGİZ\Desktop\YAZBIL\GUZELYAZIDERSI\bin\Debug\Data\YAZBIL.accdb
