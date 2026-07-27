@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|c:\\users\\ceng\u0130z\\desktop\\yazbil\\guzelyazidersi\\classes\\datagridviewayar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:classes\\datagridviewayar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|c:\\users\\ceng\u0130z\\desktop\\yazbil\\guzelyazidersi\\forms\\frmana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:forms\\frmana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|c:\\users\\ceng\u0130z\\desktop\\yazbil\\guzelyazidersi\\forms\\frmana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:forms\\frmana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\classes\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:classes\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|c:\\users\\ceng\u0130z\\desktop\\yazbil\\guzelyazidersi\\repositories\\ogrencirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:repositories\\ogrencirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|c:\\users\\ceng\u0130z\\desktop\\yazbil\\guzelyazidersi\\classes\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:classes\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|c:\\users\\ceng\u0130z\\desktop\\yazbil\\guzelyazidersi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\forms\\frmana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:forms\\frmana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\forms\\frmana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:forms\\frmana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|c:\\users\\ceng\u0130z\\desktop\\yazbil\\guzelyazidersi\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\models\\ogrenci.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:models\\ogrenci.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,37 +38,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T17:38:04.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "OgrenciRepository.cs",
+              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\OgrenciRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\OgrenciRepository.cs",
+              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\OgrenciRepository.cs",
+              "RelativeToolTip": "Repositories\\OgrenciRepository.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAUwFoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T17:16:45.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T09:20:03.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Ogrenci.cs",
+              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Models\\Ogrenci.cs",
+              "RelativeDocumentMoniker": "Models\\Ogrenci.cs",
+              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Models\\Ogrenci.cs",
+              "RelativeToolTip": "Models\\Ogrenci.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowBcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T09:13:14.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "frmAna.cs",
               "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Forms\\frmAna.cs",
               "RelativeDocumentMoniker": "Forms\\frmAna.cs",
               "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Forms\\frmAna.cs",
               "RelativeToolTip": "Forms\\frmAna.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAgwDsAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAuwGcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-24T17:58:04.106Z",
+              "WhenOpened": "2026-07-27T07:40:42.464Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DataGridViewAyar.cs",
-              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Classes\\DataGridViewAyar.cs",
-              "RelativeDocumentMoniker": "Classes\\DataGridViewAyar.cs",
-              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Classes\\DataGridViewAyar.cs",
-              "RelativeToolTip": "Classes\\DataGridViewAyar.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAH8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-24T17:42:39.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "frmAna.cs [Design]",
               "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Forms\\frmAna.cs",
               "RelativeDocumentMoniker": "Forms\\frmAna.cs",
@@ -72,26 +119,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OgrenciRepository.cs",
-              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\OgrenciRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\OgrenciRepository.cs",
-              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\OgrenciRepository.cs",
-              "RelativeToolTip": "Repositories\\OgrenciRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-24T17:45:59.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Database.cs",
               "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Classes\\Database.cs",
               "RelativeDocumentMoniker": "Classes\\Database.cs",
               "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Classes\\Database.cs",
               "RelativeToolTip": "Classes\\Database.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwMAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-24T17:43:02.582Z",
               "EditorCaption": ""

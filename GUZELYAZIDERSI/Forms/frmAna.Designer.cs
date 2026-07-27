@@ -124,7 +124,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.rchodev = new System.Windows.Forms.RichTextBox();
             this.cmbyazituru = new System.Windows.Forms.ComboBox();
-            this.cmbsinif = new System.Windows.Forms.ComboBox();
+            this.cmbSinif = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -132,9 +132,9 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.cmbadisoyadi = new System.Windows.Forms.ComboBox();
+            this.cmbAdSoyad = new System.Windows.Forms.ComboBox();
             this.mskogrnumara = new System.Windows.Forms.MaskedTextBox();
-            this.dttarih = new System.Windows.Forms.DateTimePicker();
+            this.dtpTarih = new System.Windows.Forms.DateTimePicker();
             this.rchaciklama = new System.Windows.Forms.RichTextBox();
             this.btnogrencigetir = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -1342,7 +1342,7 @@
             this.tbllytogrencibilgileri.Controls.Add(this.label15, 0, 7);
             this.tbllytogrencibilgileri.Controls.Add(this.rchodev, 1, 6);
             this.tbllytogrencibilgileri.Controls.Add(this.cmbyazituru, 1, 3);
-            this.tbllytogrencibilgileri.Controls.Add(this.cmbsinif, 1, 1);
+            this.tbllytogrencibilgileri.Controls.Add(this.cmbSinif, 1, 1);
             this.tbllytogrencibilgileri.Controls.Add(this.label26, 0, 6);
             this.tbllytogrencibilgileri.Controls.Add(this.label24, 0, 5);
             this.tbllytogrencibilgileri.Controls.Add(this.label22, 0, 4);
@@ -1350,9 +1350,9 @@
             this.tbllytogrencibilgileri.Controls.Add(this.label18, 0, 2);
             this.tbllytogrencibilgileri.Controls.Add(this.label16, 0, 1);
             this.tbllytogrencibilgileri.Controls.Add(this.label14, 0, 0);
-            this.tbllytogrencibilgileri.Controls.Add(this.cmbadisoyadi, 1, 0);
+            this.tbllytogrencibilgileri.Controls.Add(this.cmbAdSoyad, 1, 0);
             this.tbllytogrencibilgileri.Controls.Add(this.mskogrnumara, 1, 2);
-            this.tbllytogrencibilgileri.Controls.Add(this.dttarih, 1, 4);
+            this.tbllytogrencibilgileri.Controls.Add(this.dtpTarih, 1, 4);
             this.tbllytogrencibilgileri.Controls.Add(this.rchaciklama, 1, 5);
             this.tbllytogrencibilgileri.Controls.Add(this.btnogrencigetir, 1, 7);
             this.tbllytogrencibilgileri.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1401,14 +1401,15 @@
             this.cmbyazituru.Size = new System.Drawing.Size(131, 25);
             this.cmbyazituru.TabIndex = 16;
             // 
-            // cmbsinif
+            // cmbSinif
             // 
-            this.cmbsinif.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbsinif.FormattingEnabled = true;
-            this.cmbsinif.Location = new System.Drawing.Point(106, 38);
-            this.cmbsinif.Name = "cmbsinif";
-            this.cmbsinif.Size = new System.Drawing.Size(131, 25);
-            this.cmbsinif.TabIndex = 14;
+            this.cmbSinif.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbSinif.FormattingEnabled = true;
+            this.cmbSinif.Location = new System.Drawing.Point(106, 38);
+            this.cmbSinif.Name = "cmbSinif";
+            this.cmbSinif.Size = new System.Drawing.Size(131, 25);
+            this.cmbSinif.TabIndex = 14;
+            this.cmbSinif.SelectedIndexChanged += new System.EventHandler(this.cmbSinif_SelectedIndexChanged);
             // 
             // label26
             // 
@@ -1494,14 +1495,15 @@
             this.label14.Text = "Adı Soyadı:";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // cmbadisoyadi
+            // cmbAdSoyad
             // 
-            this.cmbadisoyadi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbadisoyadi.FormattingEnabled = true;
-            this.cmbadisoyadi.Location = new System.Drawing.Point(106, 3);
-            this.cmbadisoyadi.Name = "cmbadisoyadi";
-            this.cmbadisoyadi.Size = new System.Drawing.Size(131, 25);
-            this.cmbadisoyadi.TabIndex = 13;
+            this.cmbAdSoyad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbAdSoyad.FormattingEnabled = true;
+            this.cmbAdSoyad.Location = new System.Drawing.Point(106, 3);
+            this.cmbAdSoyad.Name = "cmbAdSoyad";
+            this.cmbAdSoyad.Size = new System.Drawing.Size(131, 25);
+            this.cmbAdSoyad.TabIndex = 13;
+            this.cmbAdSoyad.SelectedIndexChanged += new System.EventHandler(this.cmbAdSoyad_SelectedIndexChanged);
             // 
             // mskogrnumara
             // 
@@ -1513,14 +1515,14 @@
             this.mskogrnumara.TabIndex = 15;
             this.mskogrnumara.ValidatingType = typeof(int);
             // 
-            // dttarih
+            // dtpTarih
             // 
-            this.dttarih.CalendarFont = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dttarih.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dttarih.Location = new System.Drawing.Point(106, 143);
-            this.dttarih.Name = "dttarih";
-            this.dttarih.Size = new System.Drawing.Size(130, 25);
-            this.dttarih.TabIndex = 17;
+            this.dtpTarih.CalendarFont = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dtpTarih.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dtpTarih.Location = new System.Drawing.Point(106, 143);
+            this.dtpTarih.Name = "dtpTarih";
+            this.dtpTarih.Size = new System.Drawing.Size(130, 25);
+            this.dtpTarih.TabIndex = 17;
             // 
             // rchaciklama
             // 
@@ -1776,12 +1778,12 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox cmbsinif;
-        private System.Windows.Forms.ComboBox cmbadisoyadi;
+        private System.Windows.Forms.ComboBox cmbSinif;
+        private System.Windows.Forms.ComboBox cmbAdSoyad;
         private System.Windows.Forms.MaskedTextBox mskogrnumara;
         private System.Windows.Forms.RichTextBox rchodev;
         private System.Windows.Forms.ComboBox cmbyazituru;
-        private System.Windows.Forms.DateTimePicker dttarih;
+        private System.Windows.Forms.DateTimePicker dtpTarih;
         private System.Windows.Forms.RichTextBox rchaciklama;
         private System.Windows.Forms.TabControl tabdegerlendirme;
         private System.Windows.Forms.TabPage tabPageİcerik;

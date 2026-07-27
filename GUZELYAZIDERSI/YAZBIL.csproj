@@ -33,7 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -54,8 +56,11 @@
     <Compile Include="Forms\frmAna.Designer.cs">
       <DependentUpon>frmAna.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Ogrenci.cs" />
+    <Compile Include="Models\Olcut.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BaseRepository.cs" />
     <Compile Include="Repositories\DegerlendirmeRepository.cs" />
     <Compile Include="Repositories\OgrenciRepository.cs" />
     <Compile Include="Repositories\OlcutRepository.cs" />
@@ -143,9 +148,7 @@
   <ItemGroup>
     <None Include="Resources\btnnotal.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Data - Copy\YAZBIL.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
