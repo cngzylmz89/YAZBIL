@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,9 @@ namespace GUZELYAZIDERSI
         }
         private readonly OgrenciRepository ogrenciRepo =
     new OgrenciRepository();
+
+        private bool _olayCalisiyor = false;
+
         public static class ButtonSinifi
         {
             public static void ToolStripButtonAyarla(ToolStripButton btn)
@@ -54,22 +58,47 @@ namespace GUZELYAZIDERSI
             cmbSinif.SelectedIndex = 0;
         }
 
-        private void OgrencileriYukle()
+        private void SubeleriYukle()
         {
             if (cmbSinif.SelectedItem == null)
                 return;
 
             byte sinif = Convert.ToByte(cmbSinif.SelectedItem);
 
-            cmbAdSoyad.DataSource = ogrenciRepo.SinifaGoreGetir(sinif);
+            cmbSube.DataSource = null;
+
+            cmbSube.DataSource = ogrenciRepo.SubeleriGetir(sinif);
+
+            cmbSube.SelectedIndex = -1;
+        }
+        private void OgrencileriYukle()
+        {
+            if (cmbSinif.SelectedItem == null)
+                return;
+
+            if (cmbSube.SelectedItem == null)
+                return;
+
+            byte sinif = Convert.ToByte(cmbSinif.SelectedItem);
+
+            string sube = cmbSube.Text;
+
+            List<Ogrenci> liste =
+                ogrenciRepo.SinifSubeyeGoreGetir(sinif, sube);
+
+            cmbAdSoyad.DataSource = null;
+            cmbAdSoyad.DataSource = liste;
 
             cmbAdSoyad.DisplayMember = "OgrenciBilgisi";
-
             cmbAdSoyad.ValueMember = "OGRID";
-        }
 
+            cmbAdSoyad.SelectedIndex = -1;
+        }
         private void frmYaziDegerlendir_Load(object sender, EventArgs e)
         {
+            cmbAdSoyad.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cmbAdSoyad.AutoCompleteSource = AutoCompleteSource.ListItems;
+
             SiniflariYukle();
 
             OlcutRepository repo = new OlcutRepository();
@@ -104,17 +133,60 @@ namespace GUZELYAZIDERSI
             rchaciklama.Clear();
         }
 
+        
         private void cmbSinif_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OgrencileriYukle();
+            SubeleriYukle();
         }
 
         private void cmbAdSoyad_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbAdSoyad.SelectedItem is Ogrenci ogr)
+            if (_olayCalisiyor)
+                return;
+
+            if (!(cmbAdSoyad.SelectedItem is Ogrenci ogr))
+                return;
+
+            _olayCalisiyor = true;
+
+            try
             {
                 mskogrnumara.Text = ogr.OGRNO.ToString();
             }
+            finally
+            {
+                _olayCalisiyor = false;
+            }
+        }
+
+        private void mskogrnumara_TextChanged(object sender, EventArgs e)
+        {
+            timerOgrenciAra.Stop();
+            timerOgrenciAra.Start();
+        }
+        private void cmbSube_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OgrencileriYukle();
+        }
+
+        private void timerOgrenciAra_Tick(object sender, EventArgs e)
+        {
+            timerOgrenciAra.Stop();
+
+            if (!int.TryParse(mskogrnumara.Text, out int ogrNo))
+                return;
+
+            Ogrenci ogr = ogrenciRepo.OgrenciNumarasinaGoreGetir(ogrNo);
+
+            if (ogr == null)
+            {
+                cmbAdSoyad.Text = "";
+                return;
+            }
+
+            cmbAdSoyad.Text = ogr.OGRADSOYAD;
+            cmbSinif.Text = ogr.SINIF.ToString();
+            cmbSube.Text = ogr.SUBE;
         }
     }
 }

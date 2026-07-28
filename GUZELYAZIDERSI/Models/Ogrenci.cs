@@ -21,5 +21,13 @@ namespace GUZELYAZIDERSI.Models
         public string CINSIYET { get; set; }
 
         public bool AKTIF { get; set; }
+
+        public string OgrenciBilgisi
+        {
+            get
+            {
+                return OGRNO + " - " + OGRADSOYAD;
+            }
+        }
     }
 }

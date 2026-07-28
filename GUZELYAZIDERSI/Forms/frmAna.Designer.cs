@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmYaziDegerlendir));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -124,24 +125,29 @@
             this.label15 = new System.Windows.Forms.Label();
             this.rchodev = new System.Windows.Forms.RichTextBox();
             this.cmbyazituru = new System.Windows.Forms.ComboBox();
-            this.cmbSinif = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.cmbAdSoyad = new System.Windows.Forms.ComboBox();
             this.mskogrnumara = new System.Windows.Forms.MaskedTextBox();
             this.dtpTarih = new System.Windows.Forms.DateTimePicker();
             this.rchaciklama = new System.Windows.Forms.RichTextBox();
             this.btnogrencigetir = new System.Windows.Forms.Button();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.cmbSinif = new System.Windows.Forms.ComboBox();
+            this.cmbSube = new System.Windows.Forms.ComboBox();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblsondegerlendirme = new System.Windows.Forms.Label();
             this.lbltoplamyazi = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.timerOgrenciAra = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splana)).BeginInit();
             this.splana.Panel1.SuspendLayout();
             this.splana.Panel2.SuspendLayout();
@@ -179,6 +185,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvSekil)).BeginInit();
             this.tblogrencibilgileri.SuspendLayout();
             this.tbllytogrencibilgileri.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
+            this.splitContainer2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -1342,31 +1356,31 @@
             this.tbllytogrencibilgileri.Controls.Add(this.label15, 0, 7);
             this.tbllytogrencibilgileri.Controls.Add(this.rchodev, 1, 6);
             this.tbllytogrencibilgileri.Controls.Add(this.cmbyazituru, 1, 3);
-            this.tbllytogrencibilgileri.Controls.Add(this.cmbSinif, 1, 1);
             this.tbllytogrencibilgileri.Controls.Add(this.label26, 0, 6);
             this.tbllytogrencibilgileri.Controls.Add(this.label24, 0, 5);
             this.tbllytogrencibilgileri.Controls.Add(this.label22, 0, 4);
             this.tbllytogrencibilgileri.Controls.Add(this.label20, 0, 3);
             this.tbllytogrencibilgileri.Controls.Add(this.label18, 0, 2);
-            this.tbllytogrencibilgileri.Controls.Add(this.label16, 0, 1);
             this.tbllytogrencibilgileri.Controls.Add(this.label14, 0, 0);
             this.tbllytogrencibilgileri.Controls.Add(this.cmbAdSoyad, 1, 0);
             this.tbllytogrencibilgileri.Controls.Add(this.mskogrnumara, 1, 2);
             this.tbllytogrencibilgileri.Controls.Add(this.dtpTarih, 1, 4);
             this.tbllytogrencibilgileri.Controls.Add(this.rchaciklama, 1, 5);
             this.tbllytogrencibilgileri.Controls.Add(this.btnogrencigetir, 1, 7);
+            this.tbllytogrencibilgileri.Controls.Add(this.splitContainer1, 1, 1);
+            this.tbllytogrencibilgileri.Controls.Add(this.splitContainer2, 0, 1);
             this.tbllytogrencibilgileri.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbllytogrencibilgileri.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tbllytogrencibilgileri.Location = new System.Drawing.Point(3, 29);
             this.tbllytogrencibilgileri.Name = "tbllytogrencibilgileri";
             this.tbllytogrencibilgileri.RowCount = 8;
-            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22F));
+            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.14953F));
+            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.69159F));
+            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.14953F));
+            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.14953F));
+            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.14953F));
+            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.14953F));
+            this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.56075F));
             this.tbllytogrencibilgileri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tbllytogrencibilgileri.Size = new System.Drawing.Size(240, 298);
             this.tbllytogrencibilgileri.TabIndex = 2;
@@ -1376,9 +1390,9 @@
             this.label15.AutoSize = true;
             this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label15.Location = new System.Drawing.Point(3, 270);
+            this.label15.Location = new System.Drawing.Point(3, 272);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(97, 28);
+            this.label15.Size = new System.Drawing.Size(97, 26);
             this.label15.TabIndex = 20;
             this.label15.Text = "Öğrenci Getir";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1386,9 +1400,9 @@
             // rchodev
             // 
             this.rchodev.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rchodev.Location = new System.Drawing.Point(106, 213);
+            this.rchodev.Location = new System.Drawing.Point(106, 219);
             this.rchodev.Name = "rchodev";
-            this.rchodev.Size = new System.Drawing.Size(131, 54);
+            this.rchodev.Size = new System.Drawing.Size(131, 50);
             this.rchodev.TabIndex = 19;
             this.rchodev.Text = "";
             // 
@@ -1396,29 +1410,19 @@
             // 
             this.cmbyazituru.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbyazituru.FormattingEnabled = true;
-            this.cmbyazituru.Location = new System.Drawing.Point(106, 108);
+            this.cmbyazituru.Location = new System.Drawing.Point(106, 120);
             this.cmbyazituru.Name = "cmbyazituru";
             this.cmbyazituru.Size = new System.Drawing.Size(131, 25);
             this.cmbyazituru.TabIndex = 16;
-            // 
-            // cmbSinif
-            // 
-            this.cmbSinif.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbSinif.FormattingEnabled = true;
-            this.cmbSinif.Location = new System.Drawing.Point(106, 38);
-            this.cmbSinif.Name = "cmbSinif";
-            this.cmbSinif.Size = new System.Drawing.Size(131, 25);
-            this.cmbSinif.TabIndex = 14;
-            this.cmbSinif.SelectedIndexChanged += new System.EventHandler(this.cmbSinif_SelectedIndexChanged);
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label26.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label26.Location = new System.Drawing.Point(3, 210);
+            this.label26.Location = new System.Drawing.Point(3, 216);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(97, 60);
+            this.label26.Size = new System.Drawing.Size(97, 56);
             this.label26.TabIndex = 12;
             this.label26.Text = "Ödev:";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1428,9 +1432,9 @@
             this.label24.AutoSize = true;
             this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label24.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label24.Location = new System.Drawing.Point(3, 175);
+            this.label24.Location = new System.Drawing.Point(3, 183);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(97, 35);
+            this.label24.Size = new System.Drawing.Size(97, 33);
             this.label24.TabIndex = 10;
             this.label24.Text = "Açıklama:";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1440,9 +1444,9 @@
             this.label22.AutoSize = true;
             this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label22.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label22.Location = new System.Drawing.Point(3, 140);
+            this.label22.Location = new System.Drawing.Point(3, 150);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(97, 35);
+            this.label22.Size = new System.Drawing.Size(97, 33);
             this.label22.TabIndex = 8;
             this.label22.Text = "Tarih:";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1452,9 +1456,9 @@
             this.label20.AutoSize = true;
             this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label20.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label20.Location = new System.Drawing.Point(3, 105);
+            this.label20.Location = new System.Drawing.Point(3, 117);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(97, 35);
+            this.label20.Size = new System.Drawing.Size(97, 33);
             this.label20.TabIndex = 6;
             this.label20.Text = "Yazı Türü:";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1464,24 +1468,12 @@
             this.label18.AutoSize = true;
             this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label18.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label18.Location = new System.Drawing.Point(3, 70);
+            this.label18.Location = new System.Drawing.Point(3, 84);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(97, 35);
+            this.label18.Size = new System.Drawing.Size(97, 33);
             this.label18.TabIndex = 4;
             this.label18.Text = "Öğrenci No:";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label16.Location = new System.Drawing.Point(3, 35);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(97, 35);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "Sınıf:";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label14
             // 
@@ -1490,7 +1482,7 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label14.Location = new System.Drawing.Point(3, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(97, 35);
+            this.label14.Size = new System.Drawing.Size(97, 33);
             this.label14.TabIndex = 0;
             this.label14.Text = "Adı Soyadı:";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1508,18 +1500,19 @@
             // mskogrnumara
             // 
             this.mskogrnumara.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mskogrnumara.Location = new System.Drawing.Point(106, 73);
+            this.mskogrnumara.Location = new System.Drawing.Point(106, 87);
             this.mskogrnumara.Mask = "00000";
             this.mskogrnumara.Name = "mskogrnumara";
             this.mskogrnumara.Size = new System.Drawing.Size(131, 25);
             this.mskogrnumara.TabIndex = 15;
             this.mskogrnumara.ValidatingType = typeof(int);
+            this.mskogrnumara.TextChanged += new System.EventHandler(this.mskogrnumara_TextChanged);
             // 
             // dtpTarih
             // 
             this.dtpTarih.CalendarFont = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.dtpTarih.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dtpTarih.Location = new System.Drawing.Point(106, 143);
+            this.dtpTarih.Location = new System.Drawing.Point(106, 153);
             this.dtpTarih.Name = "dtpTarih";
             this.dtpTarih.Size = new System.Drawing.Size(130, 25);
             this.dtpTarih.TabIndex = 17;
@@ -1527,21 +1520,96 @@
             // rchaciklama
             // 
             this.rchaciklama.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rchaciklama.Location = new System.Drawing.Point(106, 178);
+            this.rchaciklama.Location = new System.Drawing.Point(106, 186);
             this.rchaciklama.Name = "rchaciklama";
-            this.rchaciklama.Size = new System.Drawing.Size(131, 29);
+            this.rchaciklama.Size = new System.Drawing.Size(131, 27);
             this.rchaciklama.TabIndex = 18;
             this.rchaciklama.Text = "";
             // 
             // btnogrencigetir
             // 
             this.btnogrencigetir.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnogrencigetir.Location = new System.Drawing.Point(106, 273);
+            this.btnogrencigetir.Location = new System.Drawing.Point(106, 275);
             this.btnogrencigetir.Name = "btnogrencigetir";
-            this.btnogrencigetir.Size = new System.Drawing.Size(131, 22);
+            this.btnogrencigetir.Size = new System.Drawing.Size(131, 20);
             this.btnogrencigetir.TabIndex = 21;
             this.btnogrencigetir.Text = "ÖĞRENCİ GETİR";
             this.btnogrencigetir.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(106, 36);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.cmbSinif);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.cmbSube);
+            this.splitContainer1.Size = new System.Drawing.Size(131, 45);
+            this.splitContainer1.SplitterDistance = 62;
+            this.splitContainer1.TabIndex = 22;
+            // 
+            // cmbSinif
+            // 
+            this.cmbSinif.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbSinif.FormattingEnabled = true;
+            this.cmbSinif.Location = new System.Drawing.Point(0, 0);
+            this.cmbSinif.Name = "cmbSinif";
+            this.cmbSinif.Size = new System.Drawing.Size(62, 25);
+            this.cmbSinif.TabIndex = 17;
+            // 
+            // cmbSube
+            // 
+            this.cmbSube.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbSube.FormattingEnabled = true;
+            this.cmbSube.Location = new System.Drawing.Point(0, 0);
+            this.cmbSube.Name = "cmbSube";
+            this.cmbSube.Size = new System.Drawing.Size(65, 25);
+            this.cmbSube.TabIndex = 18;
+            this.cmbSube.SelectedIndexChanged += new System.EventHandler(this.cmbSube_SelectedIndexChanged);
+            // 
+            // splitContainer2
+            // 
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.Location = new System.Drawing.Point(3, 36);
+            this.splitContainer2.Name = "splitContainer2";
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.Controls.Add(this.label16);
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.Controls.Add(this.label17);
+            this.splitContainer2.Size = new System.Drawing.Size(97, 45);
+            this.splitContainer2.SplitterDistance = 48;
+            this.splitContainer2.TabIndex = 23;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label16.Location = new System.Drawing.Point(7, 6);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(35, 17);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Sınıf:";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label17.Location = new System.Drawing.Point(5, 6);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(40, 17);
+            this.label17.TabIndex = 4;
+            this.label17.Text = "Şube:";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel3
             // 
@@ -1611,6 +1679,11 @@
             this.linkLabel1.Text = "PROGRAM HAKKINDA";
             this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // timerOgrenciAra
+            // 
+            this.timerOgrenciAra.Interval = 800;
+            this.timerOgrenciAra.Tick += new System.EventHandler(this.timerOgrenciAra_Tick);
+            // 
             // frmYaziDegerlendir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
@@ -1675,6 +1748,16 @@
             this.tblogrencibilgileri.PerformLayout();
             this.tbllytogrencibilgileri.ResumeLayout(false);
             this.tbllytogrencibilgileri.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel1.PerformLayout();
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            this.splitContainer2.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -1776,9 +1859,7 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox cmbSinif;
         private System.Windows.Forms.ComboBox cmbAdSoyad;
         private System.Windows.Forms.MaskedTextBox mskogrnumara;
         private System.Windows.Forms.RichTextBox rchodev;
@@ -1795,6 +1876,13 @@
         private System.Windows.Forms.Button btnogrencigetir;
         private System.Windows.Forms.DataGridView dgvIcerik;
         private System.Windows.Forms.DataGridView dgvSekil;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.ComboBox cmbSinif;
+        private System.Windows.Forms.ComboBox cmbSube;
+        private System.Windows.Forms.SplitContainer splitContainer2;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Timer timerOgrenciAra;
     }
 }
 

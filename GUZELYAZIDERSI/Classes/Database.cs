@@ -56,6 +56,8 @@ namespace GUZELYAZIDERSI.Classes
         /// </summary>
         public static OleDbConnection GetConnection()
         {
+            
+
             string connectionString =
                 @"Provider=Microsoft.ACE.OLEDB.12.0;" +
                 @"Data Source=" + DatabasePath +
