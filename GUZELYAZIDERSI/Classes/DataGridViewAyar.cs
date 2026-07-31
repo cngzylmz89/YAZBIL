@@ -79,59 +79,37 @@ namespace GUZELYAZIDERSI.Classes
         {
             dgv.Columns.Clear();
 
-            // Ölçüt ID (Gizli)
-            DataGridViewTextBoxColumn colOlcutID = new DataGridViewTextBoxColumn();
-            colOlcutID.Name = "OLCUTID";
-            colOlcutID.HeaderText = "ID";
-            colOlcutID.Visible = false;
-            dgv.Columns.Add(colOlcutID);
-
-            // Sıra (Gizli)
-            DataGridViewTextBoxColumn colSira = new DataGridViewTextBoxColumn();
-            colSira.Name = "SIRA";
-            colSira.HeaderText = "Sıra";
-            colSira.Visible = false;
-            dgv.Columns.Add(colSira);
-
             // Ölçüt
             DataGridViewTextBoxColumn colOlcut = new DataGridViewTextBoxColumn();
-            colOlcut.Name = "OLCUTADI";
+            colOlcut.Name = "colOlcut";
             colOlcut.HeaderText = "Ölçüt";
             colOlcut.ReadOnly = true;
-            colOlcut.FillWeight = 30;
+            colOlcut.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dgv.Columns.Add(colOlcut);
 
-            // Maksimum Puan
-            DataGridViewTextBoxColumn colMaks = new DataGridViewTextBoxColumn();
-            colMaks.Name = "MAKSPUAN";
-            colMaks.HeaderText = "Maks";
-            colMaks.ReadOnly = true;
-            colMaks.FillWeight = 10;
-            colMaks.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dgv.Columns.Add(colMaks);
-
-            // Verilen Puan
-            DataGridViewComboBoxColumn colPuan = new DataGridViewComboBoxColumn();
-            colPuan.Name = "PUAN";
-            colPuan.HeaderText = "Puan";
-            colPuan.FillWeight = 15;
-            colPuan.FlatStyle = FlatStyle.Flat;
-
-            for (int i = 0; i <= 5; i++)
-                colPuan.Items.Add(i);
-
+            // Alınan Puan
+            DataGridViewTextBoxColumn colPuan = new DataGridViewTextBoxColumn();
+            colPuan.Name = "colPuan";
+            colPuan.HeaderText = "Alınan";
+            colPuan.Width = 70;
             dgv.Columns.Add(colPuan);
 
-            // Geri Bildirim
-            DataGridViewButtonColumn colNot = new DataGridViewButtonColumn();
-            colNot.Name = "GERIBILDIRIM";
-            colNot.HeaderText = "AÇIKLAMA";
-            colNot.Text = "💬";
-            colNot.UseColumnTextForButtonValue = true;
-            colNot.FillWeight = 10;
+            // Maksimum Puan
+            DataGridViewTextBoxColumn colMax = new DataGridViewTextBoxColumn();
+            colMax.Name = "colMax";
+            colMax.HeaderText = "Maksimum";
+            colMax.Width = 60;
+            colMax.ReadOnly = true;
+            dgv.Columns.Add(colMax);
 
-            dgv.Columns.Add(colNot);
+            // Açıklama
+            DataGridViewButtonColumn colAciklama = new DataGridViewButtonColumn();
+            colAciklama.Name = "colAciklama";
+            colAciklama.HeaderText = "";
+            colAciklama.Width = 45;
+            colAciklama.Text = "ℹ";
+            colAciklama.UseColumnTextForButtonValue = true;
+            dgv.Columns.Add(colAciklama);
         }
-
     }
 }

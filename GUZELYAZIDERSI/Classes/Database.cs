@@ -81,23 +81,45 @@ namespace GUZELYAZIDERSI.Classes
                 return false;
             }
         }
-
         public static int ExecuteNonQuery(OleDbCommand cmd)
         {
-            try
+            
+            using (cmd.Connection = GetConnection())
             {
-                using (cmd.Connection = GetConnection())
+                cmd.Connection.Open();
+
+                try
                 {
-                    cmd.Connection.Open();
+                    
                     return cmd.ExecuteNonQuery();
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                return 0;
+                catch (Exception ex)
+                {
+                    MessageBox.Show(
+                        cmd.CommandText + Environment.NewLine +
+                        Environment.NewLine +
+                        ex.ToString());
+
+                    throw;
+                }
             }
         }
+        //public static int ExecuteNonQuery(OleDbCommand cmd)
+        //{
+        //    try
+        //    {
+        //        using (cmd.Connection = GetConnection())
+        //        {
+        //            cmd.Connection.Open();
+        //            return cmd.ExecuteNonQuery();
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
+        //        return 0;
+        //    }
+        //}
         public static object ExecuteScalar(OleDbCommand cmd)
         {
             using (cmd.Connection = GetConnection())

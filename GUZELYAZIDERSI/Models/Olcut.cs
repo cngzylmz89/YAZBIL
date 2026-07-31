@@ -10,6 +10,8 @@ namespace GUZELYAZIDERSI.Models
     {
         public int OlcutID { get; set; }
 
+        public int YaziTuruID { get; set; }   // <-- Yeni
+
         public string Kategori { get; set; }
 
         public string OlcutAdi { get; set; }
@@ -18,7 +20,8 @@ namespace GUZELYAZIDERSI.Models
 
         public int MaksPuan { get; set; }
 
-        public bool Aktif { get; set; }
         public int Sira { get; set; }
+
+        public bool Aktif { get; set; }
     }
 }

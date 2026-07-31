@@ -1,5 +1,6 @@
 ﻿using GUZELYAZIDERSI.Classes;
 using GUZELYAZIDERSI.Classes;
+using GUZELYAZIDERSI.Forms;
 using GUZELYAZIDERSI.Models;
 using GUZELYAZIDERSI.Repositories;
 using System;
@@ -24,16 +25,30 @@ namespace GUZELYAZIDERSI
         private readonly OgrenciRepository ogrenciRepo =
     new OgrenciRepository();
 
+        private readonly OdevRepository odevRepo = new OdevRepository();
         private bool _olayCalisiyor = false;
+
+       
+        private readonly OlcutRepository olcutRepo = new OlcutRepository();
+
+        private readonly YaziTuruRepository yaziTuruRepo = new YaziTuruRepository();
+        private Odev mevcutOdev = null;
+
+        private Ogrenci seciliOgrenci;
+
+        private frmBilgi bilgiFormu;
+
+        private NumericUpDown nudPuan = new NumericUpDown();
+
 
         public static class ButtonSinifi
         {
             public static void ToolStripButtonAyarla(ToolStripButton btn)
             {
-               
+
                 btn.Enabled = true;
                 btn.Visible = true;
-                
+
                 btn.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
                 btn.ImageAlign = ContentAlignment.TopCenter;
                 btn.TextImageRelation = TextImageRelation.ImageAboveText;
@@ -41,9 +56,34 @@ namespace GUZELYAZIDERSI
                 btn.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
                 btn.TextImageRelation = TextImageRelation.ImageAboveText;
 
-               btn.Padding = new Padding(9);
+                btn.Padding = new Padding(9);
 
             }
+        }
+
+        private void YaziTurleriniYukle()
+        {
+            cmbYaziTuru.DataSource = yaziTuruRepo.TumunuGetir();
+
+            cmbYaziTuru.DisplayMember = "YaziTuruAdi";
+
+            cmbYaziTuru.ValueMember = "YaziTuruID";
+
+            cmbYaziTuru.SelectedIndex = -1;
+        }
+        private void OgrenciOdeviniYukle(int ogrID)
+        {
+            mevcutOdev = odevRepo.SonOdeviGetir(ogrID);
+
+            if (mevcutOdev == null)
+            {
+                rchOdev.Clear();
+                chkYapildi.Checked = false;
+                return;
+            }
+
+            rchOdev.Text = mevcutOdev.ODEV;
+            chkYapildi.Checked = mevcutOdev.YAPILDI;
         }
 
         private void SiniflariYukle()
@@ -71,6 +111,86 @@ namespace GUZELYAZIDERSI
 
             cmbSube.SelectedIndex = -1;
         }
+
+        private void DegerlendirmeyiKaydet()
+        {
+
+        }
+
+        private void OdeviKaydet()
+        {
+            MevcutOdeviGuncelle();
+
+            YeniOdevEkle();
+        }
+
+
+       
+        private void YeniOdevEkle()
+        {
+
+            string yeniOdev = rchOdev.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(yeniOdev))
+                return;
+
+            if (mevcutOdev != null &&
+                yeniOdev == mevcutOdev.ODEV)
+                return;
+
+            Odev odev = new Odev
+            {
+                OGRID = seciliOgrenci.OGRID,
+                VERILMETARIHI = DateTime.Now,
+                ODEV = yeniOdev,
+                YAPILDI = false,
+                KONTROLTARIHI = null,
+                ACIKLAMA = ""
+            };
+
+            odevRepo.OdevEkle(odev);
+        }
+
+        private void FormuTemizle()
+        {
+            rchOdev.Clear();
+
+            chkYapildi.Checked = false;
+
+            seciliOgrenci = null;
+
+            mevcutOdev = null;
+
+            mskogrnumara.Clear();
+
+            cmbAdSoyad.Text = "";
+
+            cmbSinif.Text = "";
+
+            cmbSube.Text = "";
+
+            mskogrnumara.Focus();
+        }
+        private void MevcutOdeviGuncelle()
+        {
+            if (mevcutOdev == null)
+                return;
+
+            // Yapıldı durumu değişmediyse güncelleme yapma
+            if (mevcutOdev.YAPILDI == chkYapildi.Checked)
+                return;
+
+            odevRepo.OdevDurumGuncelle(
+                mevcutOdev.ODEVID,
+                chkYapildi.Checked,
+                chkYapildi.Checked ? DateTime.Now : (DateTime?)null);
+
+            // Bellekteki nesneyi de güncelle
+            mevcutOdev.YAPILDI = chkYapildi.Checked;
+            mevcutOdev.KONTROLTARIHI = chkYapildi.Checked
+                ? DateTime.Now
+                : (DateTime?)null;
+        }
         private void OgrencileriYukle()
         {
             if (cmbSinif.SelectedItem == null)
@@ -94,16 +214,74 @@ namespace GUZELYAZIDERSI
 
             cmbAdSoyad.SelectedIndex = -1;
         }
+
+        private void OlcutleriYukle(DataGridView dgv,
+                            int yaziTuruID,
+                            string kategori)
+        {
+            dgv.Rows.Clear();
+
+            List<Olcut> liste =
+                olcutRepo.OlcutleriGetir(yaziTuruID, kategori);
+
+            foreach (Olcut olcut in liste)
+            {
+                int satir = dgv.Rows.Add(
+                    olcut.OlcutAdi,
+                    0,
+                    olcut.MaksPuan,
+                    "ℹ");
+
+                dgv.Rows[satir].Tag = olcut;
+            }
+        }
+
+        private void BilgiGoster(Olcut olcut)
+        {
+            if (bilgiFormu != null && !bilgiFormu.IsDisposed)
+                bilgiFormu.Close();
+
+            bilgiFormu = new frmBilgi();
+
+            bilgiFormu.Goster(
+                olcut.OlcutAdi,
+                olcut.Aciklama);
+
+            Point p = Cursor.Position;
+
+            bilgiFormu.Location =
+                new Point(p.X + 10, p.Y + 10);
+
+            bilgiFormu.Show(this);
+        }
         private void frmYaziDegerlendir_Load(object sender, EventArgs e)
         {
+            nudPuan.Visible = false;
+            nudPuan.Minimum = 0;
+            nudPuan.TextAlign = HorizontalAlignment.Center;
+            nudPuan.Font = new Font("Tahoma", 13F, FontStyle.Bold);
+
+            this.Controls.Add(nudPuan);
+
+            dgvIcerik.CellClick += DataGridPuan_CellClick;
+            dgvSekil.CellClick += DataGridPuan_CellClick;
+
+            nudPuan.Leave += NudPuan_Leave;
+            nudPuan.KeyDown += NudPuan_KeyDown;
+
             cmbAdSoyad.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cmbAdSoyad.AutoCompleteSource = AutoCompleteSource.ListItems;
 
+            mskogrnumara.Mask = "000000";
+            mskogrnumara.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
+            mskogrnumara.ValidatingType = typeof(int);
+            mskogrnumara.TextAlign = HorizontalAlignment.Center;
+            mskogrnumara.Focus();
+
+
             SiniflariYukle();
 
-            OlcutRepository repo = new OlcutRepository();
-
-            List<Olcut> liste = repo.OlcutleriGetir("İÇERİK");
+            YaziTurleriniYukle();
 
             if (!Database.TestConnection())
             {
@@ -129,11 +307,11 @@ namespace GUZELYAZIDERSI
             DataGridViewAyar.DegerlendirmeKolonlariniOlustur(dgvSekil);
 
             dtpTarih.Value = DateTime.Today;
-            rchodev.Clear();
+            rchOdev.Clear();
             rchaciklama.Clear();
         }
 
-        
+
         private void cmbSinif_SelectedIndexChanged(object sender, EventArgs e)
         {
             SubeleriYukle();
@@ -173,20 +351,164 @@ namespace GUZELYAZIDERSI
         {
             timerOgrenciAra.Stop();
 
-            if (!int.TryParse(mskogrnumara.Text, out int ogrNo))
+            if (!int.TryParse(mskogrnumara.Text.Trim(), out int ogrNo))
+            {
+                BilgileriTemizle();
                 return;
+            }
 
             Ogrenci ogr = ogrenciRepo.OgrenciNumarasinaGoreGetir(ogrNo);
 
             if (ogr == null)
             {
-                cmbAdSoyad.Text = "";
+                BilgileriTemizle();
                 return;
             }
-
+            seciliOgrenci = ogr;
             cmbAdSoyad.Text = ogr.OGRADSOYAD;
             cmbSinif.Text = ogr.SINIF.ToString();
             cmbSube.Text = ogr.SUBE;
+            OgrenciOdeviniYukle(ogr.OGRID);
         }
+
+        private void BilgileriTemizle()
+        {
+            cmbAdSoyad.Text = "";
+            cmbSinif.Text = "";
+            cmbSube.Text = "";
+        }
+        private void mskogrnumara_MouseEnter(object sender, EventArgs e)
+        {
+            BeginInvoke(new Action(() =>
+            {
+                mskogrnumara.SelectAll();
+            }));
+        }
+
+        private void btnOdevDegerKaydet_Click(object sender, EventArgs e)
+        {
+            if (seciliOgrenci == null)
+            {
+                MessageBox.Show("Lütfen önce öğrenci seçiniz.");
+                return;
+            }
+
+            DegerlendirmeyiKaydet();
+
+            OdeviKaydet();
+
+            FormuTemizle();
+
+            MessageBox.Show("Kayıt başarıyla tamamlandı.");
+        }
+
+
+
+        private void cmbYaziTuru_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!(cmbYaziTuru.SelectedValue is int))
+                return;
+
+            int yaziTuruID = (int)cmbYaziTuru.SelectedValue;
+
+            OlcutleriYukle(dgvIcerik, yaziTuruID, "İÇERİK");
+            OlcutleriYukle(dgvSekil, yaziTuruID, "ŞEKİL");
+        }
+
+        private void dgvIcerik_CellContentClick(object sender,
+                                        DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+
+            if (dgvIcerik.Columns[e.ColumnIndex].Name != "colAciklama")
+                return;
+
+            Olcut olcut =
+                (Olcut)dgvIcerik.Rows[e.RowIndex].Tag;
+
+            BilgiGoster(olcut);
+        }
+        private void dgvSekil_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+
+            if (dgvSekil.Columns[e.ColumnIndex].Name != "colAciklama")
+                return;
+
+            Olcut olcut =
+                (Olcut)dgvSekil.Rows[e.RowIndex].Tag;
+            BilgiGoster(olcut);
+        }
+
+        private void DataGridPuan_CellClick(object sender,
+                                    DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+
+            DataGridView dgv = (DataGridView)sender;
+
+            if (dgv.Columns[e.ColumnIndex].Name != "colPuan")
+                return;
+
+            Rectangle r = dgv.GetCellDisplayRectangle(
+                e.ColumnIndex,
+                e.RowIndex,
+                true);
+
+            nudPuan.Parent = dgv;
+
+            nudPuan.SetBounds(
+                r.X,
+                r.Y,
+                r.Width,
+                r.Height);
+
+            nudPuan.Visible = true;
+            nudPuan.BringToFront();
+
+            if (dgv.Rows[e.RowIndex].Cells["colPuan"].Value != null)
+                nudPuan.Value =
+                    Convert.ToDecimal(
+                        dgv.Rows[e.RowIndex]
+                        .Cells["colPuan"].Value);
+
+            nudPuan.Maximum =
+                Convert.ToDecimal(
+                    dgv.Rows[e.RowIndex]
+                    .Cells["colMax"].Value);
+
+            nudPuan.Tag = dgv.Rows[e.RowIndex];
+
+            nudPuan.Focus();
+        }
+
+        private void NudPuan_Leave(object sender, EventArgs e)
+        {
+            if (nudPuan.Tag == null)
+                return;
+
+            DataGridViewRow row =
+                (DataGridViewRow)nudPuan.Tag;
+
+            row.Cells["colPuan"].Value =
+                (int)nudPuan.Value;
+
+            nudPuan.Visible = false;
+        }
+
+        private void NudPuan_KeyDown(object sender,
+                             KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                NudPuan_Leave(null, null);
+                e.SuppressKeyPress = true;
+            }
+        }
+
     }
+    
 }
