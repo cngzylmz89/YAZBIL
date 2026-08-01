@@ -1698,7 +1698,6 @@
             this.Name = "frmYaziDegerlendir";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "YAZBİL - Yazı Değerlendirme";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmYaziDegerlendir_Load);
             this.splana.Panel1.ResumeLayout(false);
             this.splana.Panel2.ResumeLayout(false);

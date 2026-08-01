@@ -236,7 +236,10 @@ namespace GUZELYAZIDERSI
             }
         }
 
-        private void BilgiGoster(Olcut olcut)
+        private void BilgiGoster(Olcut olcut,
+                          DataGridView dgv,
+                          int rowIndex,
+                          int columnIndex)
         {
             if (bilgiFormu != null && !bilgiFormu.IsDisposed)
                 bilgiFormu.Close();
@@ -247,10 +250,28 @@ namespace GUZELYAZIDERSI
                 olcut.OlcutAdi,
                 olcut.Aciklama);
 
-            Point p = Cursor.Position;
+            // Hücrenin ekrandaki konumu
+            Rectangle r = dgv.GetCellDisplayRectangle(
+                columnIndex,
+                rowIndex,
+                true);
 
-            bilgiFormu.Location =
-                new Point(p.X + 10, p.Y + 10);
+            Point p = dgv.PointToScreen(
+                new Point(r.Right, r.Top));
+
+            Rectangle ekran =
+                Screen.FromControl(dgv).WorkingArea;
+
+            int x = p.X + 5;
+            int y = p.Y;
+
+            if (x + bilgiFormu.Width > ekran.Right)
+                x = p.X - bilgiFormu.Width - r.Width - 5;
+
+            if (y + bilgiFormu.Height > ekran.Bottom)
+                y = ekran.Bottom - bilgiFormu.Height;
+
+            bilgiFormu.Location = new Point(x, y);
 
             bilgiFormu.Show(this);
         }
@@ -427,7 +448,11 @@ namespace GUZELYAZIDERSI
             Olcut olcut =
                 (Olcut)dgvIcerik.Rows[e.RowIndex].Tag;
 
-            BilgiGoster(olcut);
+            BilgiGoster(
+                olcut,
+                dgvIcerik,
+                e.RowIndex,
+                e.ColumnIndex);
         }
         private void dgvSekil_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -439,7 +464,11 @@ namespace GUZELYAZIDERSI
 
             Olcut olcut =
                 (Olcut)dgvSekil.Rows[e.RowIndex].Tag;
-            BilgiGoster(olcut);
+            BilgiGoster(
+                olcut,
+                dgvSekil,
+                e.RowIndex,
+                e.ColumnIndex);
         }
 
         private void DataGridPuan_CellClick(object sender,
