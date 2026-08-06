@@ -62,8 +62,16 @@
     <Compile Include="Forms\frmBilgi.Designer.cs">
       <DependentUpon>frmBilgi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmOgrenimCiktiSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOgrenimCiktiSec.Designer.cs">
+      <DependentUpon>frmOgrenimCiktiSec.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Odev.cs" />
     <Compile Include="Models\Ogrenci.cs" />
+    <Compile Include="Models\OgrenimCikti.cs" />
+    <Compile Include="Models\OgrenimCiktiDeger.cs" />
     <Compile Include="Models\Olcut.cs" />
     <Compile Include="Models\YaziTuru.cs" />
     <Compile Include="Program.cs" />
@@ -72,6 +80,9 @@
     <Compile Include="Repositories\DegerlendirmeRepository.cs" />
     <Compile Include="Repositories\OdevRepository.cs" />
     <Compile Include="Repositories\OgrenciRepository.cs" />
+    <Compile Include="Repositories\OgrenimCiktiDegerRepository.cs" />
+    <Compile Include="Repositories\OgrenimCiktiGridManager.cs" />
+    <Compile Include="Repositories\OgrenimCiktiRepository.cs" />
     <Compile Include="Repositories\OlcutRepository.cs" />
     <Compile Include="Repositories\YaziRepository.cs" />
     <Compile Include="Repositories\YaziTuruRepository.cs" />
@@ -80,6 +91,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmBilgi.resx">
       <DependentUpon>frmBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOgrenimCiktiSec.resx">
+      <DependentUpon>frmOgrenimCiktiSec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -169,6 +183,8 @@
     <Content Include="Data\YAZBIL.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\btnara2.png" />
+    <None Include="Resources\btnara.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -277,6 +277,12 @@ namespace GUZELYAZIDERSI
         }
         private void frmYaziDegerlendir_Load(object sender, EventArgs e)
         {
+            OgrenimCiktiRepository repo =
+    new OgrenimCiktiRepository();
+
+            cmbBeceriAlani.DataSource =
+                repo.BeceriAlanlariniGetir();
+
             nudPuan.Visible = false;
             nudPuan.Minimum = 0;
             nudPuan.TextAlign = HorizontalAlignment.Center;
@@ -423,7 +429,14 @@ namespace GUZELYAZIDERSI
             MessageBox.Show("Kayıt başarıyla tamamlandı.");
         }
 
+        frmOgrenimCiktiSec frm =
+    new frmOgrenimCiktiSec();
 
+
+        //BURASI öğrenimçıktıları formuna giderken okunacak
+//        frm.OgrenciID = seciliOgrenci.OGRID;
+
+//frm.ShowDialog();
 
         private void cmbYaziTuru_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -538,6 +551,38 @@ namespace GUZELYAZIDERSI
             }
         }
 
+        private void cmbBeceriAlani_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OgrenimCiktiRepository repo =
+    new OgrenimCiktiRepository();
+
+            cmbOgrenimAmac.DataSource =
+                repo.AmaclariGetir(
+                    cmbBeceriAlani.Text);
+
+            cmbOgrenimAmac.DisplayMember = "AMAC";
+            cmbOgrenimAmac.ValueMember = "AMACKODU";
+        }
+
+        private void cmbOgrenimAmac_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OgrenimCiktiRepository repo =
+    new OgrenimCiktiRepository();
+
+            cmbOgrenimCikti.DataSource =
+                repo.OgrenimCiktilariniGetir(
+                    cmbOgrenimAmac.SelectedValue.ToString());
+
+            cmbOgrenimCikti.DisplayMember = "OGRENIMCIKTISI";
+            cmbOgrenimCikti.ValueMember = "AMACCIKTIKODU";
+        }
+
+        private void btnOgrenimCiktiAra_Click(object sender, EventArgs e)
+        {
+            frm.OgrenciID = seciliOgrenci.OGRID;
+
+            frm.ShowDialog();
+        }
     }
     
 }

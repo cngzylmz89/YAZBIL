@@ -7,60 +7,40 @@
       "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:forms\\frmana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\classes\\datagridviewayar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:classes\\datagridviewayar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|c:\\users\\ceng\u0130z\\desktop\\yazbil\\guzelyazidersi\\forms\\frmogrenimciktisec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:forms\\frmogrenimciktisec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|c:\\users\\ceng\u0130z\\desktop\\yazbil\\guzelyazidersi\\forms\\frmogrenimciktisec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:forms\\frmogrenimciktisec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\repositories\\ogrenimciktirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:repositories\\ogrenimciktirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\forms\\frmana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:forms\\frmana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|c:\\users\\ceng\u0130z\\desktop\\yazbil\\guzelyazidersi\\forms\\frmbilgi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:forms\\frmbilgi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|c:\\users\\ceng\u0130z\\desktop\\yazbil\\guzelyazidersi\\repositories\\ogrenimciktidegerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:repositories\\ogrenimciktidegerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\forms\\frmbilgi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:forms\\frmbilgi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|c:\\users\\ceng\u0130z\\desktop\\yazbil\\guzelyazidersi\\repositories\\ogrenimciktigridmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:repositories\\ogrenimciktigridmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\repositories\\olcutrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:repositories\\olcutrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\models\\ogrenimcikti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:models\\ogrenimcikti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\repositories\\yazitururepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:repositories\\yazitururepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\models\\yazituru.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:models\\yazituru.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\models\\olcut.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:models\\olcut.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\models\\ogrenci.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:models\\ogrenci.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\repositories\\odevrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:repositories\\odevrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\models\\odev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:models\\odev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\repositories\\ogrencirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:repositories\\ogrencirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\models\\ogrenimciktideger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEED34F2-6310-4488-B1FE-59ABC4F0A919}|YAZBIL.csproj|solutionrelative:models\\ogrenimciktideger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,52 +50,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "YaziTuruRepository.cs",
-              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\YaziTuruRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\YaziTuruRepository.cs",
-              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\YaziTuruRepository.cs",
-              "RelativeToolTip": "Repositories\\YaziTuruRepository.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwB0AAAAXAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "frmOgrenimCiktiSec.cs",
+              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Forms\\frmOgrenimCiktiSec.cs",
+              "RelativeDocumentMoniker": "Forms\\frmOgrenimCiktiSec.cs",
+              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Forms\\frmOgrenimCiktiSec.cs",
+              "RelativeToolTip": "Forms\\frmOgrenimCiktiSec.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAmwGEAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T10:19:41.748Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Olcut.cs",
-              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Models\\Olcut.cs",
-              "RelativeDocumentMoniker": "Models\\Olcut.cs",
-              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Models\\Olcut.cs",
-              "RelativeToolTip": "Models\\Olcut.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T10:07:03.621Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "OlcutRepository.cs",
-              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\OlcutRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\OlcutRepository.cs",
-              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\OlcutRepository.cs",
-              "RelativeToolTip": "Repositories\\OlcutRepository.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAACgAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T10:00:55.038Z"
+              "WhenOpened": "2026-08-06T12:08:08.332Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "frmOgrenimCiktiSec.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Forms\\frmOgrenimCiktiSec.cs",
+              "RelativeDocumentMoniker": "Forms\\frmOgrenimCiktiSec.cs",
+              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Forms\\frmOgrenimCiktiSec.cs [Design]",
+              "RelativeToolTip": "Forms\\frmOgrenimCiktiSec.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T07:58:45.857Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "frmAna.cs [Design]",
               "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Forms\\frmAna.cs",
               "RelativeDocumentMoniker": "Forms\\frmAna.cs",
-              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Forms\\frmAna.cs [Design]*",
-              "RelativeToolTip": "Forms\\frmAna.cs [Design]*",
+              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Forms\\frmAna.cs [Design]",
+              "RelativeToolTip": "Forms\\frmAna.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-18T18:28:02.382Z",
               "EditorCaption": " [Design]"
@@ -126,134 +95,89 @@
               "Title": "frmAna.cs",
               "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Forms\\frmAna.cs",
               "RelativeDocumentMoniker": "Forms\\frmAna.cs",
-              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Forms\\frmAna.cs*",
-              "RelativeToolTip": "Forms\\frmAna.cs*",
-              "ViewState": "AgIAAMQBAAAAAAAAAAAUwNQBAAAYAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Forms\\frmAna.cs",
+              "RelativeToolTip": "Forms\\frmAna.cs",
+              "ViewState": "AgIAADYCAAAAAAAAAAAhwEUCAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-27T07:40:42.464Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DataGridViewAyar.cs",
-              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Classes\\DataGridViewAyar.cs",
-              "RelativeDocumentMoniker": "Classes\\DataGridViewAyar.cs",
-              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Classes\\DataGridViewAyar.cs",
-              "RelativeToolTip": "Classes\\DataGridViewAyar.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAGMAAAApAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "OgrenimCiktiRepository.cs",
+              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\OgrenimCiktiRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\OgrenimCiktiRepository.cs",
+              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\OgrenimCiktiRepository.cs",
+              "RelativeToolTip": "Repositories\\OgrenimCiktiRepository.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAwwKQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T06:33:36.98Z",
+              "WhenOpened": "2026-08-04T02:28:16.729Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "frmBilgi.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Forms\\frmBilgi.cs",
-              "RelativeDocumentMoniker": "Forms\\frmBilgi.cs",
-              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Forms\\frmBilgi.cs [Design]",
-              "RelativeToolTip": "Forms\\frmBilgi.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T08:35:53.604Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmBilgi.cs",
-              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Forms\\frmBilgi.cs",
-              "RelativeDocumentMoniker": "Forms\\frmBilgi.cs",
-              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Forms\\frmBilgi.cs",
-              "RelativeToolTip": "Forms\\frmBilgi.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAqwGEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T08:43:15.949Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "YaziTuru.cs",
-              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Models\\YaziTuru.cs",
-              "RelativeDocumentMoniker": "Models\\YaziTuru.cs",
-              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Models\\YaziTuru.cs",
-              "RelativeToolTip": "Models\\YaziTuru.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA0wBYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T10:20:33.67Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "OgrenciRepository.cs",
-              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\OgrenciRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\OgrenciRepository.cs",
-              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\OgrenciRepository.cs",
-              "RelativeToolTip": "Repositories\\OgrenciRepository.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAADwv3MAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T08:59:05.835Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "OdevRepository.cs",
-              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\OdevRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\OdevRepository.cs",
-              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\OdevRepository.cs",
-              "RelativeToolTip": "Repositories\\OdevRepository.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAmwBEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T10:54:25.502Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Ogrenci.cs",
-              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Models\\Ogrenci.cs",
-              "RelativeDocumentMoniker": "Models\\Ogrenci.cs",
-              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Models\\Ogrenci.cs",
-              "RelativeToolTip": "Models\\Ogrenci.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAIwB8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-27T09:13:14.207Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Odev.cs",
-              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Models\\Odev.cs",
-              "RelativeDocumentMoniker": "Models\\Odev.cs",
-              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Models\\Odev.cs",
-              "RelativeToolTip": "Models\\Odev.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T07:27:32.004Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\BaseRepository.cs",
-              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\BaseRepository.cs",
-              "RelativeToolTip": "Repositories\\BaseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T07:26:36.522Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwvxgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-27T17:38:04.662Z"
+              "WhenOpened": "2026-08-06T09:56:05.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OgrenimCiktiDegerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\OgrenimCiktiDegerRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\OgrenimCiktiDegerRepository.cs",
+              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\OgrenimCiktiDegerRepository.cs",
+              "RelativeToolTip": "Repositories\\OgrenimCiktiDegerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T12:10:22.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OgrenimCiktiGridManager.cs",
+              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\OgrenimCiktiGridManager.cs",
+              "RelativeDocumentMoniker": "Repositories\\OgrenimCiktiGridManager.cs",
+              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Repositories\\OgrenimCiktiGridManager.cs",
+              "RelativeToolTip": "Repositories\\OgrenimCiktiGridManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T12:03:51.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OgrenimCikti.cs",
+              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Models\\OgrenimCikti.cs",
+              "RelativeDocumentMoniker": "Models\\OgrenimCikti.cs",
+              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Models\\OgrenimCikti.cs",
+              "RelativeToolTip": "Models\\OgrenimCikti.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAUwCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-04T02:37:53.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OgrenimCiktiDeger.cs",
+              "DocumentMoniker": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Models\\OgrenimCiktiDeger.cs",
+              "RelativeDocumentMoniker": "Models\\OgrenimCiktiDeger.cs",
+              "ToolTip": "C:\\Users\\CENG\u0130Z\\Desktop\\YAZBIL\\GUZELYAZIDERSI\\Models\\OgrenimCiktiDeger.cs",
+              "RelativeToolTip": "Models\\OgrenimCiktiDeger.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowBwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-04T02:23:33.917Z"
             }
           ]
         }

@@ -117,6 +117,12 @@
             this.tabPageSekil = new System.Windows.Forms.TabPage();
             this.dgvSekil = new System.Windows.Forms.DataGridView();
             this.tabPageogrenimciktilari = new System.Windows.Forms.TabPage();
+            this.tbllytdegerlendirmeogrenimciktilari = new System.Windows.Forms.TableLayoutPanel();
+            this.tbllytdegerlendirmeogrenimciktilariust = new System.Windows.Forms.TableLayoutPanel();
+            this.cmbOgrenimCikti = new System.Windows.Forms.ComboBox();
+            this.cmbOgrenimAmac = new System.Windows.Forms.ComboBox();
+            this.cmbBeceriAlani = new System.Windows.Forms.ComboBox();
+            this.dtvOgrenimCikti = new System.Windows.Forms.DataGridView();
             this.tabPageNotlar = new System.Windows.Forms.TabPage();
             this.tabPageSonuc = new System.Windows.Forms.TabPage();
             this.tblogrencibilgileri = new System.Windows.Forms.TableLayoutPanel();
@@ -147,6 +153,7 @@
             this.lbltoplamyazi = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.timerOgrenciAra = new System.Windows.Forms.Timer(this.components);
+            this.btnOgrenimCiktiAra = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splana)).BeginInit();
             this.splana.Panel1.SuspendLayout();
             this.splana.Panel2.SuspendLayout();
@@ -182,6 +189,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvIcerik)).BeginInit();
             this.tabPageSekil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSekil)).BeginInit();
+            this.tabPageogrenimciktilari.SuspendLayout();
+            this.tbllytdegerlendirmeogrenimciktilari.SuspendLayout();
+            this.tbllytdegerlendirmeogrenimciktilariust.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvOgrenimCikti)).BeginInit();
             this.tblogrencibilgileri.SuspendLayout();
             this.tbllytogrencibilgileri.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -1295,6 +1306,7 @@
             // 
             // tabPageogrenimciktilari
             // 
+            this.tabPageogrenimciktilari.Controls.Add(this.tbllytdegerlendirmeogrenimciktilari);
             this.tabPageogrenimciktilari.Location = new System.Drawing.Point(4, 26);
             this.tabPageogrenimciktilari.Name = "tabPageogrenimciktilari";
             this.tabPageogrenimciktilari.Padding = new System.Windows.Forms.Padding(3);
@@ -1302,6 +1314,84 @@
             this.tabPageogrenimciktilari.TabIndex = 2;
             this.tabPageogrenimciktilari.Text = "Öğrenim Çıktıları";
             this.tabPageogrenimciktilari.UseVisualStyleBackColor = true;
+            // 
+            // tbllytdegerlendirmeogrenimciktilari
+            // 
+            this.tbllytdegerlendirmeogrenimciktilari.ColumnCount = 1;
+            this.tbllytdegerlendirmeogrenimciktilari.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tbllytdegerlendirmeogrenimciktilari.Controls.Add(this.tbllytdegerlendirmeogrenimciktilariust, 0, 0);
+            this.tbllytdegerlendirmeogrenimciktilari.Controls.Add(this.dtvOgrenimCikti, 0, 1);
+            this.tbllytdegerlendirmeogrenimciktilari.Controls.Add(this.btnOgrenimCiktiAra, 0, 2);
+            this.tbllytdegerlendirmeogrenimciktilari.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbllytdegerlendirmeogrenimciktilari.Location = new System.Drawing.Point(3, 3);
+            this.tbllytdegerlendirmeogrenimciktilari.Margin = new System.Windows.Forms.Padding(0);
+            this.tbllytdegerlendirmeogrenimciktilari.Name = "tbllytdegerlendirmeogrenimciktilari";
+            this.tbllytdegerlendirmeogrenimciktilari.RowCount = 3;
+            this.tbllytdegerlendirmeogrenimciktilari.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.27273F));
+            this.tbllytdegerlendirmeogrenimciktilari.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63.63636F));
+            this.tbllytdegerlendirmeogrenimciktilari.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tbllytdegerlendirmeogrenimciktilari.Size = new System.Drawing.Size(226, 261);
+            this.tbllytdegerlendirmeogrenimciktilari.TabIndex = 0;
+            // 
+            // tbllytdegerlendirmeogrenimciktilariust
+            // 
+            this.tbllytdegerlendirmeogrenimciktilariust.ColumnCount = 1;
+            this.tbllytdegerlendirmeogrenimciktilariust.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tbllytdegerlendirmeogrenimciktilariust.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tbllytdegerlendirmeogrenimciktilariust.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tbllytdegerlendirmeogrenimciktilariust.Controls.Add(this.cmbOgrenimCikti, 0, 2);
+            this.tbllytdegerlendirmeogrenimciktilariust.Controls.Add(this.cmbOgrenimAmac, 0, 1);
+            this.tbllytdegerlendirmeogrenimciktilariust.Controls.Add(this.cmbBeceriAlani, 0, 0);
+            this.tbllytdegerlendirmeogrenimciktilariust.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbllytdegerlendirmeogrenimciktilariust.Location = new System.Drawing.Point(0, 0);
+            this.tbllytdegerlendirmeogrenimciktilariust.Margin = new System.Windows.Forms.Padding(0);
+            this.tbllytdegerlendirmeogrenimciktilariust.Name = "tbllytdegerlendirmeogrenimciktilariust";
+            this.tbllytdegerlendirmeogrenimciktilariust.RowCount = 3;
+            this.tbllytdegerlendirmeogrenimciktilariust.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tbllytdegerlendirmeogrenimciktilariust.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tbllytdegerlendirmeogrenimciktilariust.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tbllytdegerlendirmeogrenimciktilariust.Size = new System.Drawing.Size(226, 71);
+            this.tbllytdegerlendirmeogrenimciktilariust.TabIndex = 0;
+            // 
+            // cmbOgrenimCikti
+            // 
+            this.cmbOgrenimCikti.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbOgrenimCikti.FormattingEnabled = true;
+            this.cmbOgrenimCikti.Location = new System.Drawing.Point(3, 49);
+            this.cmbOgrenimCikti.Name = "cmbOgrenimCikti";
+            this.cmbOgrenimCikti.Size = new System.Drawing.Size(220, 25);
+            this.cmbOgrenimCikti.TabIndex = 2;
+            // 
+            // cmbOgrenimAmac
+            // 
+            this.cmbOgrenimAmac.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbOgrenimAmac.FormattingEnabled = true;
+            this.cmbOgrenimAmac.Location = new System.Drawing.Point(3, 26);
+            this.cmbOgrenimAmac.Name = "cmbOgrenimAmac";
+            this.cmbOgrenimAmac.Size = new System.Drawing.Size(220, 25);
+            this.cmbOgrenimAmac.TabIndex = 1;
+            this.cmbOgrenimAmac.SelectedIndexChanged += new System.EventHandler(this.cmbOgrenimAmac_SelectedIndexChanged);
+            // 
+            // cmbBeceriAlani
+            // 
+            this.cmbBeceriAlani.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbBeceriAlani.FormattingEnabled = true;
+            this.cmbBeceriAlani.Location = new System.Drawing.Point(3, 3);
+            this.cmbBeceriAlani.Name = "cmbBeceriAlani";
+            this.cmbBeceriAlani.Size = new System.Drawing.Size(220, 25);
+            this.cmbBeceriAlani.TabIndex = 0;
+            this.cmbBeceriAlani.SelectedIndexChanged += new System.EventHandler(this.cmbBeceriAlani_SelectedIndexChanged);
+            // 
+            // dtvOgrenimCikti
+            // 
+            this.dtvOgrenimCikti.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtvOgrenimCikti.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtvOgrenimCikti.Location = new System.Drawing.Point(3, 74);
+            this.dtvOgrenimCikti.Name = "dtvOgrenimCikti";
+            this.dtvOgrenimCikti.RowHeadersWidth = 51;
+            this.dtvOgrenimCikti.RowTemplate.Height = 24;
+            this.dtvOgrenimCikti.Size = new System.Drawing.Size(220, 160);
+            this.dtvOgrenimCikti.TabIndex = 1;
             // 
             // tabPageNotlar
             // 
@@ -1686,6 +1776,19 @@
             this.timerOgrenciAra.Interval = 800;
             this.timerOgrenciAra.Tick += new System.EventHandler(this.timerOgrenciAra_Tick);
             // 
+            // btnOgrenimCiktiAra
+            // 
+            this.btnOgrenimCiktiAra.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnOgrenimCiktiAra.Font = new System.Drawing.Font("Segoe UI", 4.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOgrenimCiktiAra.Location = new System.Drawing.Point(3, 240);
+            this.btnOgrenimCiktiAra.Name = "btnOgrenimCiktiAra";
+            this.btnOgrenimCiktiAra.Size = new System.Drawing.Size(220, 18);
+            this.btnOgrenimCiktiAra.TabIndex = 2;
+            this.btnOgrenimCiktiAra.Text = "ÖĞRENİM ÇIKTISI ARA";
+            this.btnOgrenimCiktiAra.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnOgrenimCiktiAra.UseVisualStyleBackColor = true;
+            this.btnOgrenimCiktiAra.Click += new System.EventHandler(this.btnOgrenimCiktiAra_Click);
+            // 
             // frmYaziDegerlendir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
@@ -1745,6 +1848,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvIcerik)).EndInit();
             this.tabPageSekil.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSekil)).EndInit();
+            this.tabPageogrenimciktilari.ResumeLayout(false);
+            this.tbllytdegerlendirmeogrenimciktilari.ResumeLayout(false);
+            this.tbllytdegerlendirmeogrenimciktilariust.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtvOgrenimCikti)).EndInit();
             this.tblogrencibilgileri.ResumeLayout(false);
             this.tblogrencibilgileri.PerformLayout();
             this.tbllytogrencibilgileri.ResumeLayout(false);
@@ -1886,6 +1993,13 @@
         private System.Windows.Forms.SplitContainer splitContainer3;
         private System.Windows.Forms.Button btnOdevDegerKaydet;
         private System.Windows.Forms.CheckBox chkYapildi;
+        private System.Windows.Forms.TableLayoutPanel tbllytdegerlendirmeogrenimciktilari;
+        private System.Windows.Forms.TableLayoutPanel tbllytdegerlendirmeogrenimciktilariust;
+        private System.Windows.Forms.ComboBox cmbOgrenimCikti;
+        private System.Windows.Forms.ComboBox cmbOgrenimAmac;
+        private System.Windows.Forms.ComboBox cmbBeceriAlani;
+        private System.Windows.Forms.DataGridView dtvOgrenimCikti;
+        private System.Windows.Forms.Button btnOgrenimCiktiAra;
     }
 }
 

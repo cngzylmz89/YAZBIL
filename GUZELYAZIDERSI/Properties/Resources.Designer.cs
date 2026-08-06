@@ -93,6 +93,26 @@ namespace GUZELYAZIDERSI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnara {
+            get {
+                object obj = ResourceManager.GetObject("btnara", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnara2 {
+            get {
+                object obj = ResourceManager.GetObject("btnara2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btneskiileri {
             get {
                 object obj = ResourceManager.GetObject("btneskiileri", resourceCulture);
